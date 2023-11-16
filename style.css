@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200&display=swap')@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200&display=swap')
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	background-color: darkblue;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.box {
+	position: relative;
+	width: 380px;
+	height: 420px;
+	box-sizing: border-box;
+	background: black;
+	padding: 50px 40px;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.box h2 {
+	color: white;
+	font-weight: 500;
+	margin-bottom: 20px;
+	letter-spacing: 1px;
+}
+
+.box input {
+	padding: 10px;
+	width: 90%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	background: transparent;
+	border: none;
+	border-radius: 4px;
+	color: white;
+	font-size: 14px;
+	letter-spacing: 2px;
+	transition: 0.5s;
+	outline: none;
+}
+
+.box input:hover,
+.box input:focus {
+	border-bottom: 2px solid #1e9bff;
+	background: #00010e;
+	color: white;
+	border-radius: 5px;
+	box-shadow: 0 0 35px #1e9bff;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.box input[type="password"] {
+	margin-bottom: 5px;
+}
+
+.box label{
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+	font-size: 12px;
+	color: white;
+
+}
+
+.box input[type="checkbox"] {
+	margin-right: 20px;
+	width: 20px;;
+}
+
+.box .Links{
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	font-size: 12px;
+	color: white;
+}
+
+.box .Links a {
+	margin: 10px 0;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: none;
+	color: white;
+	text-decoration: none;
+	font-size: 12px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.box .Links a:hover,
+.box .Links a:focus {
+	background: #1e9bff;
+	color: #00010e;
+	font-weight: 500;
+	box-shadow: 0 0 35px #1e9bff;
+	transition: 0.5s;
+	cursor: pointer;
+}
